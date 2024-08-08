@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<style>
+    /* Include your custom styles */
+    .payment-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .payment-option {
+        margin: 20px 0;
+        padding: 10px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .payment-option:hover {
+        background: #f0f0f0;
+    }
+
+    .btn-primary {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    #celebration-message {
+        display: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #007BFF;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="Navbar" id="navbar">
+        <div class="top-header">
+            <div class="logo">
+                <a href="/index.html"><img src="./Assets/logo.png" alt="Logo"></a>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <li>
+                    <div class="cart-container">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">(0)</span>
+                    </div>
+                </li>
+                <div id="cart-details" style="display: none;">
+                    <h2>Cart Details</h2>
+                    <div id="cart-items-list" class="items-list"></div>
+                    <div id="total-price" class="total-price">Total: $0.00</div>
+                    <button id="checkout" class="btn-primary">Checkout</button>
+                    <button id="close-cart" class="btn-secondary">Close Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="navbar-container">
+                <div class="close-offer">
+                    <i class="fas fa-times"></i> <!-- Close Icon -->
+                </div>
+                <ul>
+                    <li><a href="#">Sale upto 40% OFF</a></li>
+                    <li><a href="#">Cotton Wear</a></li>
+                    <li><a href="#">Anarkali</a></li>
+                    <li><a href="#">Draped Dress</a></li>
+                    <li><a href="#">Party Wear</a></li>
+                    <li><a href="#">Gown</a></li>
+                    <li><a href="#">Shop All</a></li>
+                </ul>
+                <li><a href="#">Login</a></li>
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <div class="payment-container">
+        <h1>Choose Your Payment Method</h1>
+        <div id="cod-option" class="payment-option">
+            <h3>Cash on Delivery (COD)</h3>
+        </div>
+        <div id="online-payment-option" class="payment-option">
+            <h3>Online Payment</h3>
+        </div>
+        <div id="celebration-message">🎉 Congratulations! Your order is placed! 🎉</div>
+    </div>
+
+    <!-- Include canvas-confetti library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Calculate total amount for Razorpay
+            const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toFixed(2);
+
+            document.getElementById('cart-count').textContent = `(${cart.reduce((count, item) => count + item.quantity, 0)})`;
+
+            function triggerCelebration() {
+                // Show celebration message
+                const message = document.getElementById('celebration-message');
+                message.style.display = 'block';
+
+                // Trigger confetti animation
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#ffcc00', '#ff5733', '#33c1ff', '#33ff57']
+                });
+
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 3000); // Hide message after 3 seconds
+            }
+
+            document.getElementById('cod-option').addEventListener('click', () => {
+             
+                localStorage.removeItem('cart'); // Clear cart
+                triggerCelebration(); // Trigger celebration animation
+                setTimeout(() => {
+                    window.location.href = 'index.html'; // Redirect to home page
+                }, 4000); // Redirect after 4 seconds to give time for celebration animation
+            });
+
+            document.getElementById('online-payment-option').addEventListener('click', () => {
+                const options = {
+                    "key": "rzp_test_PYHaLDDqKzcd6G", // Razorpay key
+                    "amount": totalAmount * 100, // Amount is in paise (multiplied by 100)
+                    "currency": "INR",
+                    "name": "Your Store Name",
+                    "description": "Order Payment",
+                    "image": "./Assets/logo.png",
+                    "handler": function (response) {
+                        alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+                        localStorage.removeItem('cart'); // Clear cart
+                        triggerCelebration(); // Trigger celebration animation
+                        setTimeout(() => {
+                            window.location.href = 'index.html'; // Redirect to home page
+                        }, 4000); // Redirect after 4 seconds to give time for celebration animation
+                    },
+                    "prefill": {
+                        "name": "Customer Name",
+                        "email": "customer@example.com",
+                        "contact": "9999999999"
+                    },
+                    "notes": {
+                        "address": "Your Store Address"
+                    },
+                    "theme": {
+                        "color": "#007BFF"
+                    }
+                };
+                const rzp1 = new Razorpay(options);
+                rzp1.open();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<style>
+    /* Include your custom styles */
+    .cart-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .cart-item img {
+        max-width: 100px;
+        margin-right: 20px;
+    }
+
+    .cart-item-details {
+        flex-grow: 1;
+    }
+
+    .total-price {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .btn-primary {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #delivery-address-form {
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    #delivery-address-form h3 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #delivery-address-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #delivery-address-form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #delivery-address-form button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        color: #fff;
+        background: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #delivery-address-form button:hover {
+        background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+        .top-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .top-header .icons {
+            margin-top: 10px;
+        }
+
+        .offer {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <!-- Navbar (Same as index.html) -->
+    <div class="Navbar" id="navbar">
+        <div class="top-header">
+            <div class="logo">
+                <a href="/index.html"><img src="./Assets/logo.png" alt="Logo"></a>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <li>
+                    <div class="cart-container">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">(0)</span>
+                    </div>
+                </li>
+                <div id="cart-details" style="display: none;">
+                    <h2>Cart Details</h2>
+                    <div id="cart-items-list" class="items-list"></div>
+                    <div id="total-price" class="total-price">Total: $0.00</div>
+                    <button id="checkout" class="btn-primary">Checkout</button>
+                    <button id="close-cart" class="btn-secondary">Close Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="navbar-container">
+                <div class="close-offer">
+                    <i class="fas fa-times"></i> <!-- Close Icon -->
+                </div>
+                <ul>
+                    <li><a href="#">Sale upto 40% OFF</a></li>
+                    <li><a href="#">Cotton Wear</a></li>
+                    <li><a href="#">Anarkali</a></li>
+                    <li><a href="#">Draped Dress</a></li>
+                    <li><a href="#">Party Wear</a></li>
+                    <li><a href="#">Gown</a></li>
+                    <li><a href="#">Shop All</a></li>
+                </ul>
+                <li><a href="#">Login</a></li>
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <section id="checkout-details">
+        <!-- Cart items will be dynamically added here -->
+    </section>
+
+    <section>
+        <form id="delivery-address-form">
+            <h3>Delivery Address</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br>
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br>
+            <button type="button" id="go-for-payment" class="btn-primary">Go for Payment</button>
+        </form>
+    </section>
+
+    <footer>
+        <button id="return-to-home" class="btn-primary">Return to Home</button>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkoutDetails = document.getElementById('checkout-details');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cart.length === 0) {
+                checkoutDetails.innerHTML = '<p>Your cart is empty.</p>';
+            } else {
+                let totalPrice = 0;
+                cart.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('cart-item');
+                    itemDiv.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" class="item-image">
+                        <div class="cart-item-details">
+                            <h4>${item.name}</h4>
+                            <p>Price: $${item.price.toFixed(2)}</p>
+                            <p>Quantity: ${item.quantity}</p>
+                        </div>
+                    `;
+                    checkoutDetails.appendChild(itemDiv);
+                    totalPrice += item.price * item.quantity;
+                });
+
+                const totalDiv = document.createElement('div');
+                totalDiv.classList.add('total-price');
+                totalDiv.innerHTML = `<h2>Total Price: $${totalPrice.toFixed(2)}</h2>`;
+                checkoutDetails.appendChild(totalDiv);
+            }
+
+            document.getElementById('return-to-home').addEventListener('click', () => {
+                window.location.href = 'index.html'; 
+            });
+
+            document.getElementById('go-for-payment').addEventListener('click', () => {
+                const name = document.getElementById('name').value;
+                const address = document.getElementById('address').value;
+                const city = document.getElementById('city').value;
+                const state = document.getElementById('state').value;
+                const zip = document.getElementById('zip').value;
+                const phone = document.getElementById('phone').value;
+
+                if (name && address && city && state && zip && phone) {
+                    alert("Proceeding to payment...");
+                    // Implement payment processing or redirection here
+                } else {
+                    alert("Please fill out all fields.");
+                }
+            });
+
+            // Update cart count in navbar
+            const cartItemCount = cart.reduce((count, item) => count + item.quantity, 0);
+            document.getElementById('cart-count').textContent = `(${cartItemCount})`;
+        });
+
+
+        document.getElementById('go-for-payment').addEventListener('click', () => {
+    const name = document.getElementById('name').value;
+    const address = document.getElementById('address').value;
+    const city = document.getElementById('city').value;
+    const state = document.getElementById('state').value;
+    const zip = document.getElementById('zip').value;
+    const phone = document.getElementById('phone').value;
+
+    if (name && address && city && state && zip && phone) {
+        const deliveryDetails = {
+            name,
+            address,
+            city,
+            state,
+            zip,
+            phone
+        };
+
+        localStorage.setItem('deliveryDetails', JSON.stringify(deliveryDetails));
+        window.location.href = 'payment.html'; // Redirect to payment options page
+    } else {
+        alert("Please fill out all fields.");
+    }
+});
+
+    </script>
+</body>
+
+</html>

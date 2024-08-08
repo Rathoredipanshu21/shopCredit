@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "name": "Dinner Plate",
+        "description": "A large plate for main courses.",
+        "price": 15.99,
+        "category": "Crockeries",
+        "image": "https://tiimg.tistatic.com/fp/1/007/686/light-weight-ceramic-plain-white-color-catering-plates-319.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Soup Bowl",
+        "description": "A bowl for soups and stews.",
+        "price": 12.99,
+        "category": "Crockeries",
+        "image": "https://www.servewell.co.in/cdn/shop/products/01_0f416bc6-a868-40d9-9a3a-1d3c66e67bd1.jpg?v=1665035942"
+    },
+    {
+        "id": 3,
+        "name": "Glass Pitcher",
+        "description": "A pitcher for beverages.",
+        "price": 25.99,
+        "category": "Crockeries",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2023/12/370165764/KO/BE/KU/55776541/glass-pitcher-2-2-liter-water-pitcher-with-lid-beverage-serveware-iced-tea-jag-500x500.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cutting Board",
+        "description": "A board for chopping vegetables.",
+        "price": 9.99,
+        "category": "Kitchen Items",
+        "image": "https://www.jiomart.com/images/product/original/rvmeaby3so/naayaab-craft-trendy-luxury-craft-pakka-sheesham-wood-bamboo-cutting-board-with-handle-chopping-board-for-kitchen-cutting-board-for-kitchen-vegetable-wooden-chopping-board-for-kitchen-size-32-x-22-x-2cm-product-images-orvmeaby3so-p602474237-0-202306191508.jpg?im=Resize=(1000,1000)"
+    },
+    {
+        "id": 5,
+        "name": "Chef's Knife",
+        "description": "A versatile kitchen knife.",
+        "price": 49.99,
+        "category": "Kitchen Items",
+        "image": "https://www.bigbasket.com/media/uploads/p/l/40021952_4-fackelmann-pvc-handle-meat-chopping-knife-black-32cm.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Measuring Cups",
+        "description": "Cups for measuring ingredients.",
+        "price": 8.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbyf2hZSupa-TOl2Q40W9HPkl6_J0kWI48g&s"
+    },
+    {
+        "id": 7,
+        "name": "Toothpaste",
+        "description": "Fresh mint toothpaste.",
+        "price": 2.99,
+        "category": "FMCG",
+        "image": "https://www.jiomart.com/images/product/original/491711395/dabur-red-toothpaste-800-g-product-images-o491711395-p591013561-3-202205172253.jpg?im=Resize=(420,420)"
+    },
+    {
+        "id": 8,
+        "name": "Shampoo",
+        "description": "Shampoo for all hair types.",
+        "price": 5.99,
+        "category": "FMCG",
+        "image": "https://www.bigbasket.com/media/uploads/p/l/202243_12-pantene-pro-v-advanced-solution-shampoo-hairfall-control-strengthens-roots.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Soap Bar",
+        "description": "Moisturizing soap bar.",
+        "price": 1.99,
+        "category": "FMCG",
+        "image": "https://images-cdn.ubuy.co.in/64ea682ba0079f442c6d4c4d-dove-shea-butter-beauty-cream.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Refrigerator",
+        "description": "Energy-efficient refrigerator.",
+        "price": 399.99,
+        "category": "Home Appliances",
+        "image": "https://sathya.in/media/87913/catalog/2-35.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Washing Machine",
+        "description": "Automatic washing machine.",
+        "price": 299.99,
+        "category": "Home Appliances",
+        "image": "https://images.jdmagicbox.com/quickquotes/images_main/whirlpool-7-kg-fully-automatic-top-loading-washing-machine-whitemagic-elite-wine-105982379-17m4w.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Microwave Oven",
+        "description": "Compact microwave oven.",
+        "price": 89.99,
+        "category": "Home Appliances",
+        "image": "https://cdn.moglix.com/p/8bnyseCnnE8i1.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Blender",
+        "description": "High-power blender for smoothies.",
+        "price": 59.99,
+        "category": "Home Appliances",
+        "image": "https://myborosil.com/cdn/shop/products/my-borosil-food-mixers-blenders-nutrifresh-pb31-29490968264842.jpg?v=1690956757"
+    },
+    {
+        "id": 14,
+        "name": "Coffee Maker",
+        "description": "Coffee maker with programmable settings.",
+        "price": 39.99,
+        "category": "Home Appliances",
+        "image": "https://glenindia.com/cdn/shop/products/1_59f04f79-cb58-4b08-9547-07702fcc49a1_1200x1200.jpg?v=1672308229"
+    },
+    {
+        "id": 15,
+        "name": "Electric Kettle",
+        "description": "Quick-boil electric kettle.",
+        "price": 29.99,
+        "category": "Home Appliances",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/electric-kettle/r/u/q/multipurpose-electric-kettle-2-ltr-multi-purpose-electric-kettle-original-imagthnjfgdjyrz5.jpeg?q=90&crop=false"
+    },
+    {
+        "id": 16,
+        "name": "Vacuum Cleaner",
+        "description": "Powerful vacuum cleaner.",
+        "price": 119.99,
+        "category": "Home Appliances",
+        "image": "https://www.reliancedigital.in/medias/Forbes-VOGUE-VacuumCleaners-491296777-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyNDk3NTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDliL2hmYi85MzUyNzU1MzQ3NDg2LmpwZ3wxMmFhMjJmYjNiOWY5ZDRiYTg2MzBkY2VkYTM0Mzk4ZjZkOTM0OWQwN2VhYmQyYzJkNjY1MzEyZmEyMWMzMmEx"
+    },
+    {
+        "id": 17,
+        "name": "Dishwasher",
+        "description": "Dishwasher with multiple settings.",
+        "price": 499.99,
+        "category": "Home Appliances",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkGDD_GDMj5H8yskOg9bPneQzhUeKonvonQ&s"
+    },
+    {
+        "id": 18,
+        "name": "Ceiling Fan",
+        "description": "Energy-efficient ceiling fan.",
+        "price": 89.99,
+        "category": "Home Appliances",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/kuyf8nk0/fan/k/v/t/fksbfan1200cb-ceiling-fan-flipkart-smartbuy-original-imag7yg4wgcsfm9f.jpeg?q=90&crop=false"
+    },
+    {
+        "id": 19,
+        "name": "Iron",
+        "description": "Steam iron with adjustable heat settings.",
+        "price": 34.99,
+        "category": "Home Appliances",
+        "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/d20b2494-3142-4e9b-a17a-90a0079508e9.__CR541,0,3087,4167_PT0_SX463_V1___.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Towel",
+        "description": "Soft and absorbent bath towel.",
+        "price": 7.99,
+        "category": "Home Essentials",
+        "image": "https://m.media-amazon.com/images/I/81en3yalOyL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Blanket",
+        "description": "Cozy and warm blanket.",
+        "price": 24.99,
+        "category": "Home Essentials",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6U2x2K0BxkPSxR1ZRdhfeG52sUViqHED4g&s"
+    },
+    {
+        "id": 22,
+        "name": "Pillow",
+        "description": "Comfortable pillow for a good night's sleep.",
+        "price": 15.99,
+        "category": "Home Essentials",
+        "image": "https://www.ikea.com/in/en/images/products/skogsfraeken-pillow-high__0970237_ph172412_s5.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Curtains",
+        "description": "Elegant curtains for your windows.",
+        "price": 34.99,
+        "category": "Home Essentials",
+        "image": "https://drapestory.in/cdn/shop/files/19C_OMBRE23_1_18ff397d-56b8-4127-b898-67c6348170b0.jpg?v=1690269245"
+    },
+    {
+        "id": 24,
+        "name": "Bed Sheet",
+        "description": "Soft and durable bed sheet.",
+        "price": 19.99,
+        "category": "Home Essentials",
+        "image": "https://m.media-amazon.com/images/I/91WOdpfZ5oL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Tablecloth",
+        "description": "Stylish tablecloth for dining tables.",
+        "price": 12.99,
+        "category": "Home Essentials",
+        "image": "https://m.media-amazon.com/images/I/71g9xQ8xzgL._AC_UF350,350_QL80_.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Shower Curtain",
+        "description": "Waterproof shower curtain.",
+        "price": 9.99,
+        "category": "Home Essentials",
+        "image": "https://m.media-amazon.com/images/I/81ieqA4cv7L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Mop",
+        "description": "Efficient mop for cleaning floors.",
+        "price": 14.99,
+        "category": "Cleaning Supplies",
+        "image": "https://m.media-amazon.com/images/I/81+OXkklu3L.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Broom",
+        "description": "Durable broom for sweeping.",
+        "price": 7.99,
+        "category": "Cleaning Supplies",
+        "image": "https://m.media-amazon.com/images/I/61FJ4vZT2OL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Cleaning Cloth",
+        "description": "Microfiber cleaning cloth.",
+        "price": 3.99,
+        "category": "Cleaning Supplies",
+        "image": "https://m.media-amazon.com/images/I/81HCQb4zG4L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Glass Cleaner",
+        "description": "Cleaner for sparkling glass surfaces.",
+        "price": 4.99,
+        "category": "Cleaning Supplies",
+        "image": "https://cycle.in/cdn/shop/files/Stop-OGlassCleaner500ml.jpg?v=1708952829"
+    },
+    {
+        "id": 31,
+        "name": "Disinfectant Spray",
+        "description": "Kills germs and bacteria.",
+        "price": 5.99,
+        "category": "Cleaning Supplies",
+        "image": "https://images-cdn.ubuy.com.sa/6340094036dcf079e80dea44-19-oz-crisp-linen-disinfectant-spray.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Trash Bags",
+        "description": "Heavy-duty trash bags.",
+        "price": 6.99,
+        "category": "Cleaning Supplies",
+        "image": "https://m.media-amazon.com/images/I/71lau0itCfL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Laundry Detergent",
+        "description": "Detergent for clean and fresh laundry.",
+        "price": 10.99,
+        "category": "Cleaning Supplies",
+        "image": "https://m.media-amazon.com/images/I/61BrgoBTQsL.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Dish Soap",
+        "description": "Soap for washing dishes.",
+        "price": 2.99,
+        "category": "Cleaning Supplies",
+        "image": "https://images-cdn.ubuy.co.in/64b0da6bcb701359cf0bd922-dawn-ultra-dishwashing-liquid-dish-soap.jpg"
+    },
+    {
+        "id": 35,
+        "name": "Air Freshener",
+        "description": "Freshens up any room.",
+        "price": 3.99,
+        "category": "Cleaning Supplies",
+        "image": "https://m.media-amazon.com/images/I/61HC6lCV0iL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 36,
+        "name": "All-Purpose Cleaner",
+        "description": "Cleaner for various surfaces.",
+        "price": 4.49,
+        "category": "Cleaning Supplies",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OKEa9FPhy7ZixZrP0DGFBcr2AmZbJdOIpQ&s"
+    },
+    {
+        "id": 37,
+        "name": "Tissue Paper",
+        "description": "Soft tissue paper for daily use.",
+        "price": 1.99,
+        "category": "FMCG",
+        "image": "https://m.media-amazon.com/images/I/41KDKvAGT-L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Rice",
+        "description": "Long-grain rice.",
+        "price": 15.99,
+        "category": "FMCG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKuFdMz6JzEk3Jz15xF79oHaQp6c8idCcVg&"
+    },
+    {
+        "id": 39,
+        "name": "Flour",
+        "description": "All-purpose flour for baking.",
+        "price": 4.99,
+        "category": "FMCG",
+        "image": "https://i0.wp.com/dhatuorganics.com/wp-content/uploads/2023/12/Stock-2-10.jpg"
+    },
+    {
+        "id": 40,
+        "name": "Sugar",
+        "description": "Granulated sugar.",
+        "price": 3.49,
+        "category": "FMCG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5jQmu8r_dyaZJCFl-uFJfYIvW5iEv_OVqA&s"
+    },
+    {
+        "id": 41,
+        "name": "Cereal",
+        "description": "Breakfast cereal.",
+        "price": 5.99,
+        "category": "FMCG",
+        "image": "https://images-cdn.ubuy.co.in/64c6a15f42925529d30cb9d6-cocoa-puffs-chocolate-breakfast-cereal.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Cooking Oil",
+        "description": "Vegetable cooking oil.",
+        "price": 7.99,
+        "category": "FMCG",
+        "image": "https://www.bigbasket.com/media/uploads/p/xl/40231452_1-gio-canola-oil-rich-in-vitamins-cholesterol-free-ideal-for-cooking.jpg"
+    },
+    {
+        "id": 43,
+        "name": "Coffee",
+        "description": "Ground coffee beans.",
+        "price": 9.99,
+        "category": "FMCG",
+        "image": "https://www.cafecoffeeday.com/sites/default/files/mobile-new-menu-cafe-coffee-day.jpg"
+    },
+    {
+        "id": 44,
+        "name": "Tea",
+        "description": "Black tea leaves.",
+        "price": 6.99,
+        "category": "FMCG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnizjjezTC5vQr8VUA_EwaX4YgfDFN5sAg_A&s"
+    },
+    {
+        "id": 45,
+        "name": "Pasta",
+        "description": "Dry pasta.",
+        "price": 3.99,
+        "category": "FMCG",
+        "image": "https://www.saltandlavender.com/wp-content/uploads/2020/04/tomato-goat-cheese-pasta-2.jpg"
+    },
+    {
+        "id": 46,
+        "name": "Canned Beans",
+        "description": "Canned beans in tomato sauce.",
+        "price": 2.49,
+        "category": "FMCG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakZxSftOGJq3L_qLOe3aaLOP6rGGeAndLzA&s"
+    },
+    {
+        "id": 47,
+        "name": "Salt",
+        "description": "Table salt.",
+        "price": 1.49,
+        "category": "FMCG",
+        "image": "https://origin.club/media/catalog/product/cache/86eaafd287624d270d87c663dd3976d5/c/r/crystal_sea_salt_2__1.jpg"
+    },
+    {
+        "id": 48,
+        "name": "Pepper",
+        "description": "Black pepper.",
+        "price": 2.99,
+        "category": "FMCG",
+        "image": "https://www.organicgyaan.com/cdn/shop/files/Black-Pepper-Whole.jpg?v=1721393981"
+    },
+    {
+        "id": 49,
+        "name": "Toilet Paper",
+        "description": "Soft and absorbent toilet paper.",
+        "price": 6.99,
+        "category": "FMCG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhc42mj-__K3at-kFfj4mbBLBVQpZRXiyCQ&s"
+    },
+    {
+        "id": 50,
+        "name": "Dishwashing Liquid",
+        "description": "Liquid for washing dishes.",
+        "price": 4.49,
+        "category": "FMCG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4G_oCRRb3gorJts7RS86-_nZOGRh_rrAXoA&s"
+    },
+    {
+        "id": 51,
+        "name": "Cookware Set",
+        "description": "Complete set of cookware.",
+        "price": 99.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.qa/64c3a5a40abfb3708b5cc58c-tramontina-primaware-18-piece-non-stick.jpg"
+    },
+    {
+        "id": 52,
+        "name": "Cutlery Set",
+        "description": "Stainless steel cutlery set.",
+        "price": 29.99,
+        "category": "Kitchen Items",
+        "image": "https://nestasia.in/cdn/shop/products/GoldCutlerySet_1.jpg?v=1608727147"
+    },
+    {
+        "id": 53,
+        "name": "Frying Pan",
+        "description": "Non-stick frying pan.",
+        "price": 23.99,
+        "category": "Kitchen Items",
+        "image": "https://shop.ttkprestige.com/media/catalog/product/3/7/37413-P-IMG1.jpg"
+    },
+    {
+        "id": 54,
+        "name": "Saucepan",
+        "description": "Durable saucepan.",
+        "price": 19.99,
+        "category": "Kitchen Items",
+        "image": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410307730001/35ezv4EjD-000000410307730001_0_org.jpg"
+    },
+    {
+        "id": 55,
+        "name": "Oven Mitts",
+        "description": "Heat-resistant oven mitts.",
+        "price": 12.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/812+0savvKL.jpg"
+    },
+    {
+        "id": 56,
+        "name": "Grater",
+        "description": "Multi-purpose grater.",
+        "price": 7.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/61rBUyh1-FL.jpg"
+    },
+    {
+        "id": 57,
+        "name": "Peeler",
+        "description": "Vegetable peeler.",
+        "price": 4.99,
+        "category": "Kitchen Items",
+        "image": "https://assets.ajio.com/medias/sys_master/root/20240406/kbFE/66111a6216fd2c6e6aa19f9f/-473Wx593H-464559216-green-MODEL.jpg"
+    },
+    {
+        "id": 58,
+        "name": "Slicing Knife",
+        "description": "Knife for slicing meats.",
+        "price": 14.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/7108MOeexKL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 59,
+        "name": "Kitchen Timer",
+        "description": "Timer for precise cooking.",
+        "price": 5.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLuoaNuHZhUu6EoV0W4Vv7Qi6PYxgaZbnMA&s"
+    },
+    {
+        "id": 60,
+        "name": "Garlic Press",
+        "description": "Press for crushing garlic.",
+        "price": 6.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuObaTNosY2XaJ01V3luDocZviopSyyfa0AA&s"
+    },
+    {
+        "id": 61,
+        "name": "Egg Cooker",
+        "description": "Cooker for boiling eggs.",
+        "price": 13.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/61R8YCI1nRL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 62,
+        "name": "Food Processor",
+        "description": "Processor for chopping and blending.",
+        "price": 89.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/91ZBp+eaL4L._AC_UF350,350_QL80_.jpg"
+    },
+    {
+        "id": 63,
+        "name": "Electric Griddle",
+        "description": "Griddle for cooking pancakes.",
+        "price": 49.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.co.in/662675f9c9437772253864e3-blackstone-e-series-electric-griddle.jpg"
+    },
+    {
+        "id": 64,
+        "name": "Stand Mixer",
+        "description": "Mixer for baking and cooking.",
+        "price": 149.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.co.in/633a90f9210dcb2d3b4edec1-ubuy-online-shopping.jpg"
+    },
+    {
+        "id": 65,
+        "name": "Toaster",
+        "description": "Toaster for bread and bagels.",
+        "price": 29.99,
+        "category": "Kitchen Items",
+        "image": "https://media.croma.com/image/upload/v1691676058/Croma%20Assets/Small%20Appliances/Toasters%20Sandwich%20Makers/Images/234744_0_wtuotf.png"
+    },
+    {
+        "id": 66,
+        "name": "Spice Rack",
+        "description": "Rack for organizing spices.",
+        "price": 14.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/81HyEW2r2HL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 67,
+        "name": "Salt Grinder",
+        "description": "Grinder for sea salt.",
+        "price": 7.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/71Ow3CcRhIL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 68,
+        "name": "Coffee Grinder",
+        "description": "Grinder for fresh coffee beans.",
+        "price": 19.99,
+        "category": "Kitchen Items",
+        "image": "https://horeca247.in/wp-content/uploads/2022/03/Horeca247-Commercial-Coffee-Bean-Grinder-250-Watt.jpg"
+    },
+    {
+        "id": 69,
+        "name": "Ladle",
+        "description": "Ladle for serving soups.",
+        "price": 3.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-LOzEtj6W0hMDWErjoJtWw_rh3m15d_MSw&s"
+    },
+    {
+        "id": 70,
+        "name": "Meat Tenderizer",
+        "description": "Tool for tenderizing meat.",
+        "price": 9.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/71XJD-QUjyS._AC_UF350,350_QL80_.jpg"
+    },
+    {
+        "id": 71,
+        "name": "Kitchen Shears",
+        "description": "Scissors for kitchen use.",
+        "price": 11.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.co.in/635517236d6d8715400886a3-beature-heavy-duty-kitchen-shears.jpg"
+    },
+    {
+        "id": 72,
+        "name": "Bread Box",
+        "description": "Box for storing bread.",
+        "price": 23.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11-CT8CfN2hwXLmyQiuvmMHg4z7w_7nZNRw&s"
+    },
+    {
+        "id": 73,
+        "name": "Ice Cube Tray",
+        "description": "Tray for making ice cubes.",
+        "price": 2.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.co.in/647d55db778a0e57fe34dbe6-ice-cube-tray-with-lid-bin-bpa-free.jpg"
+    },
+    {
+        "id": 74,
+        "name": "Dish Rack",
+        "description": "Rack for drying dishes.",
+        "price": 14.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.co.in/662f284a6447da0f373dc737-ktaxon-2-tier-dish-drainer-drying-rack.jpg"
+    },
+    {
+        "id": 75,
+        "name": "Kitchen Scale",
+        "description": "Scale for measuring ingredients.",
+        "price": 19.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/61Vt5Egqf4L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 76,
+        "name": "Blender Bottle",
+        "description": "Bottle with a mixing ball.",
+        "price": 8.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/51vZYVAvARL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 77,
+        "name": "Tea Infuser",
+        "description": "Infuser for brewing tea.",
+        "price": 4.49,
+        "category": "Kitchen Items",
+        "image": "https://www.ikea.com/in/en/images/products/idealisk-tea-infuser-stainless-steel__0713448_pe729535_s5.jpg?f=s"
+    },
+    {
+        "id": 78,
+        "name": "Wine Opener",
+        "description": "Tool for opening wine bottles.",
+        "price": 9.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoxSSARHWEPHgh_AmeR9tYFKEl9koqR5Fog&s"
+    },
+    {
+        "id": 79,
+        "name": "Measuring Spoons",
+        "description": "Set of measuring spoons.",
+        "price": 3.49,
+        "category": "Kitchen Items",
+        "image": "https://purensoselect.in/cdn/shop/products/4-pieces-stainless-steel-measuring-spoon-set-pur1015-40-4pcsset-soap-moulds-266.webp?v=1676382212"
+    },
+    {
+        "id": 80,
+        "name": "Vegetable Steamer",
+        "description": "Steamer for cooking vegetables.",
+        "price": 15.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/810ogYYHJnL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 81,
+        "name": "Popcorn Maker",
+        "description": "Machine for making popcorn.",
+        "price": 34.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1aCmJCTdPnB0nORR0mOTt4bpL2fWxyaEqpg&s"
+    },
+    {
+        "id": 82,
+        "name": "Rice Cooker",
+        "description": "Cooker for making rice.",
+        "price": 39.99,
+        "category": "Kitchen Items",
+        "image": "https://images-cdn.ubuy.co.in/64fc6a27baec9e72eb0a77d8-panasonic-6-cup-rice-cooker-with.jpg"
+    },
+    {
+        "id": 83,
+        "name": "Digital Thermometer",
+        "description": "Thermometer for cooking.",
+        "price": 12.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchEdQpJ20jqMdwI3uZ7Cgie1IKfR9RI2_VQ&s"
+    },
+    {
+        "id": 84,
+        "name": "Ice Cream Maker",
+        "description": "Machine for making ice cream.",
+        "price": 79.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nrhl7buTioVJKR-7I0OrSmS7Pv0rJw8vzQ&s"
+    },
+    {
+        "id": 85,
+        "name": "Slow Cooker",
+        "description": "Cooker for slow-cooking meals.",
+        "price": 49.99,
+        "category": "Kitchen Items",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMroPcW3U0Dfw4E5Ag4yl6CYAGyYR4G4Q7Aw&s"
+    },
+    {
+        "id": 86,
+        "name": "Pressure Cooker",
+        "description": "Cooker for fast cooking.",
+        "price": 39.99,
+        "category": "Kitchen Items",
+        "image": "https://www.ikea.com/in/en/images/products/bandgurami-pressure-cooker-stainless-steel__1285352_pe933295_s5.jpg?f=s"
+    },
+    {
+        "id": 87,
+        "name": "Garbage Disposal",
+        "description": "Disposal unit for food waste.",
+        "price": 129.99,
+        "category": "Home Appliances",
+        "image": "https://m.media-amazon.com/images/I/61C6IoklF2L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 88,
+        "name": "Electric Oven",
+        "description": "Oven for baking and roasting.",
+        "price": 349.99,
+        "category": "Home Appliances",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0fGgsG9L2iTwK9KVaVbH_4RUyf4PJwc9ig&s"
+    },
+    {
+        "id": 89,
+        "name": "Air Conditioner",
+        "description": "Window air conditioner.",
+        "price": 249.99,
+        "category": "Home Appliances",
+        "image": "https://images-cdn.ubuy.co.in/65ab6b5911e4cc7e0407be13-portable-air-conditioners-mini-air.jpg"
+    },
+    {
+        "id": 90,
+        "name": "Space Heater",
+        "description": "Portable space heater.",
+        "price": 69.99,
+        "category": "Home Appliances",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFsrMKyulUrOYA8d4qLv-YON1WMcyLFokDw&s"
+    },
+    {
+        "id": 91,
+        "name": "Dehumidifier",
+        "description": "Dehumidifier for home use.",
+        "price": 159.99,
+        "category": "Home Appliances",
+        "image": "https://m.media-amazon.com/images/I/51GZbM+RxuL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 92,
+        "name": "Air Purifier",
+        "description": "Air purifier for cleaner air.",
+        "price": 89.99,
+        "category": "Home Appliances",
+        "image": "https://m.media-amazon.com/images/I/81g6GZQaEgL._AC_UF350,350_QL80_.jpg"
+    },
+    {
+        "id": 93,
+        "name": "Humidifier",
+        "description": "Humidifier for adding moisture to the air.",
+        "price": 39.99,
+        "category": "Home Appliances",
+        "image": "https://images.meesho.com/images/products/167687865/uzipr_512.jpg"
+    },
+    {
+        "id": 94,
+        "name": "Electric Blanket",
+        "description": "Heated electric blanket.",
+        "price": 49.99,
+        "category": "Home Appliances",
+        "image": "https://images-cdn.ubuy.co.in/634ec4b126a7870bc659868c-flflk-electric-blanket-heated-throw.jpg"
+    },
+    {
+        "id": 95,
+        "name": "Coffee Grinder",
+        "description": "Grinder for fresh coffee beans.",
+        "price": 19.99,
+        "category": "Kitchen Items",
+        "image": "https://pyxis.nymag.com/v1/imgs/323/d2e/bf0ebe504983c0c37a5c021dbd147f81a9.rsquare.w600.jpg"
+    },
+    {
+        "id": 96,
+        "name": "Blender",
+        "description": "High-power blender for smoothies.",
+        "price": 59.99,
+        "category": "Kitchen Items",
+        "image": "https://bossindia.com/wp-content/uploads/2023/08/B132_10-1.jpg"
+    },
+    {
+        "id": 97,
+        "name": "Dishwasher",
+        "description": "Dishwasher with multiple settings.",
+        "price": 499.99,
+        "category": "Home Appliances",
+        "image": "https://www.ikea.com/in/en/images/products/lagan-integrated-dishwasher__0854674_pe780724_s5.jpg"
+    },
+    {
+        "id": 98,
+        "name": "Ceiling Fan",
+        "description": "Energy-efficient ceiling fan.",
+        "price": 89.99,
+        "category": "Home Appliances",
+        "image": "https://shop.orientelectric.com/cdn/shop/files/Image1-copy-0_df2a30fa-07d4-43ca-b2ef-28e8577b3c15.jpg?v=1707971755&width=990"
+    },
+    {
+        "id": 99,
+        "name": "Iron",
+        "description": "Steam iron with adjustable heat settings.",
+        "price": 34.99,
+        "category": "Home Appliances",
+        "image": "https://d2md07pas2ip5w.cloudfront.net/media/catalog/product/G/H/GHGDICEO100_0.jpg"
+    },
+    {
+        "id": 100,
+        "name": "Blender Bottle",
+        "description": "Bottle with a mixing ball.",
+        "price": 8.99,
+        "category": "Kitchen Items",
+        "image": "https://m.media-amazon.com/images/I/716iF4+GMfL._AC_UF894,1000_QL80_.jpg"
+    }
+]
